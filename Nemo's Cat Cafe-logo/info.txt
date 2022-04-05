@@ -1,0 +1,16 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Signika-Regular
+font link: https://fonts.google.com/specimen/Signika
+font author: Anna Giedryś
+font author site: http://ancymonic.com/
+
+
+icon designer: Martin LEBRETON
+icon designer link: /Martin LEBRETON
+        
+{"bg":"#FCF2F7","icon-gradient-0":"#D418EA","icon-gradient-1":"#ECD062","font":"#321926","slogan":"#462d3a"}
+
+Added by me: #2A2B2E
+      

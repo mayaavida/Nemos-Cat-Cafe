@@ -1,0 +1,358 @@
+/* Base Styles */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: hsl(330, 63%, 97%);
+}
+
+.text{
+    color: #321926;
+    font-size: 2rem;
+}
+
+h1, h2, h3, .text{
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #D418EA;
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+h2, h3 {
+    font-size: 3rem;
+    color: #321926;
+    padding-top: 2%;
+    line-height: 4.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 2.2rem;
+    color: #321926;
+    font-family: 'Roboto', sans-serif;
+    line-height: 4rem;
+}
+
+h4, h5{
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2rem;
+}
+
+h5 {
+    font: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: #321926;
+}
+
+a:hover{
+    color: #D418EA;
+}
+
+.fa-arrow-down{
+    display: block;
+    font-size: 4rem;
+    color: #ECD062;
+    margin: 0 auto;
+}
+
+.fa-mug-hot{
+    display: block;
+    font-size: 5rem;
+    color: #321926;
+    padding-top: 2.5%;
+}
+
+.fa-house-heart{
+    display: block;
+    font-size: 3rem;
+    color: #321926;
+}
+
+.fa-paw, .fa-cookie-bite{
+    display: block;
+    font-size: 4rem;
+    color: #321926;
+    margin-bottom: 2%;
+}
+
+.fa-address-book, .fa-instagram, .fa-twitter, .fa-facebook{
+    font-size: 2.5rem;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+button{
+    border-radius: 10px;
+    padding: 2.5%;
+    border: none;
+    background-color:#D418EA;
+    color: white;
+    font-family: 'Signika', sans-serif;
+    font-size: 2rem;
+    margin-top: 2%;
+}
+
+button:hover{
+    background-color: #ECD062;
+    cursor: pointer;
+}
+
+/*Layout*/
+
+/*Nav*/
+
+nav ul{
+   display: flex;
+   justify-content: flex-end;
+}
+
+.text{
+    margin-top: 48px;
+    margin-right: 4%;
+}
+
+.pushLeft{
+    margin-right: auto;
+    margin-top: -1%;
+}
+
+
+/*Main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+main *{
+    padding-top: 2%;
+}
+
+
+/*Second Section*/
+
+.two{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 15%;
+}
+
+/*Images Section*/
+
+#images{
+    display: flex;
+    align-items: stretch;
+}
+
+.imageOne, .imageThree{
+    max-width: 24%;
+}
+
+.imageTwo {
+    max-width: 52%;
+}
+
+/*Menu Section*/
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    height: 30rem;
+    background-color: #FCF2F7;
+    padding: 2%;
+}
+
+.menu section{
+    flex-basis: 40%;
+}
+
+
+/*About Us*/
+.About{
+    display: flex;
+    height: 30rem;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 2%;
+    background-color: white;
+}
+
+.About section{
+    flex-basis: 40%;
+}
+
+
+/*Footer*/
+
+footer{
+    background-color: #321926;
+    color: white;
+    display: flex;
+    height: auto;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+footer section{
+    margin: 2%;
+    flex-basis: 25%;
+}
+
+.social{
+    text-align: right;
+}
+
+
+/*About Page*/
+
+.AboutAbout h1{
+    text-align: left;
+    padding-left: 6%;
+}
+
+.Nemo{
+    display: flex;
+    justify-content: center;
+    column-gap: 8%;
+    align-items: flex-start;
+}
+
+.NemoTree{
+    border-radius: 25%;
+    flex-basis: 30%;
+}
+
+.Nemo p {
+    flex-basis: 50%;
+    line-height: 3.2rem;
+}
+
+.Nemo a{
+    color:#D418EA;
+}
+
+.Nemo a:hover{
+    font-weight: bold;
+}
+
+
+/* Menu Page */
+
+.foodMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.forHumans {
+    flex-basis: 50%;
+    border-right: dashed 3px #321926;
+    padding: 4% 5% 5% 0;
+}
+
+.forCats {
+    flex-basis: 50%;
+    padding: 4% 0 5% 5%;
+}
+
+.foodMenu li{
+    font-size: 2rem;
+    color: #321926;
+    font-family: 'Roboto', sans-serif;
+    line-height: 3rem;
+    text-align: center;
+}
+
+
+/* Media Queries */
+
+
+@media screen and (max-width: 550px) {
+    #images{
+        flex-direction: column;
+    }
+    .imageTwo, .imageThree{
+        max-width: 100%;
+    }
+    .imageOne{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .menu, .About{
+        flex-direction: column;
+        flex-basis: 80%;
+        padding: 4%;
+        height: fit-content;
+    }
+    .About{
+        flex-direction: column-reverse;
+    }
+    footer section{
+        flex-basis: 40%;
+        margin: 4%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    ul li img{
+        width: 85%;
+        margin-left: -10%;
+    }
+    .text{
+        font-size: 1.9rem;
+        margin-right: 3%;
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Nemo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .AboutAbout h1{
+        padding-left: 0%;
+    }
+    .Nemo img{
+        width: 95%;
+        margin: 5%;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .foodMenu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .forHumans{
+        border-right: none;
+        border-bottom: dashed 3px #321926;
+        padding: 0 0 5% 0;
+    }
+    .forCats{
+        padding: 5% 0 5% 0;
+    }
+}
